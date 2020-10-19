@@ -26,6 +26,10 @@ class ViewController: UIViewController {
         multiColorView.backgroundColor = UIColor(displayP3Red: CGFloat(sliderRed.value),
                                                  green: CGFloat(sliderGreen.value),
                                                  blue: CGFloat(sliderBlue.value), alpha: 1.0)
+        redValue.text = String(format: "%.2f", sliderRed.value)
+        greenValue.text = String(format: "%.2f", sliderGreen.value)
+        blueValue.text = String(format: "%.2f", sliderBlue.value)
+        
     }
 
     @IBAction func redSliderAction() {
