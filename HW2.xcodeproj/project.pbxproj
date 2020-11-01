@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F2748FE254B634D006CB849 /* StartScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F2748FD254B634D006CB849 /* StartScreenViewController.swift */; };
 		7FFE5F552539628D0089B44B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFE5F542539628D0089B44B /* AppDelegate.swift */; };
 		7FFE5F572539628D0089B44B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFE5F562539628D0089B44B /* SceneDelegate.swift */; };
-		7FFE5F592539628D0089B44B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFE5F582539628D0089B44B /* ViewController.swift */; };
+		7FFE5F592539628D0089B44B /* ColorMixerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFE5F582539628D0089B44B /* ColorMixerViewController.swift */; };
 		7FFE5F5C2539628D0089B44B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFE5F5A2539628D0089B44B /* Main.storyboard */; };
 		7FFE5F5E2539628E0089B44B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FFE5F5D2539628E0089B44B /* Assets.xcassets */; };
 		7FFE5F612539628E0089B44B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FFE5F5F2539628E0089B44B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F2748FD254B634D006CB849 /* StartScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenViewController.swift; sourceTree = "<group>"; };
 		7FFE5F512539628D0089B44B /* HW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFE5F542539628D0089B44B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FFE5F562539628D0089B44B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7FFE5F582539628D0089B44B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7FFE5F582539628D0089B44B /* ColorMixerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorMixerViewController.swift; sourceTree = "<group>"; };
 		7FFE5F5B2539628D0089B44B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7FFE5F5D2539628E0089B44B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FFE5F602539628E0089B44B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F2748F5254B625F006CB849 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7FFE5F5A2539628D0089B44B /* Main.storyboard */,
+				7FFE5F5F2539628E0089B44B /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		7F2748F6254B6274006CB849 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				7FFE5F542539628D0089B44B /* AppDelegate.swift */,
+				7FFE5F562539628D0089B44B /* SceneDelegate.swift */,
+				7FFE5F5D2539628E0089B44B /* Assets.xcassets */,
+				7FFE5F622539628E0089B44B /* Info.plist */,
+			);
+			path = System;
+			sourceTree = "<group>";
+		};
+		7F2748F8254B6280006CB849 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7FFE5F582539628D0089B44B /* ColorMixerViewController.swift */,
+				7F2748FD254B634D006CB849 /* StartScreenViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		7FFE5F482539628D0089B44B = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +87,9 @@
 		7FFE5F532539628D0089B44B /* HW2 */ = {
 			isa = PBXGroup;
 			children = (
-				7FFE5F542539628D0089B44B /* AppDelegate.swift */,
-				7FFE5F562539628D0089B44B /* SceneDelegate.swift */,
-				7FFE5F582539628D0089B44B /* ViewController.swift */,
-				7FFE5F5A2539628D0089B44B /* Main.storyboard */,
-				7FFE5F5D2539628E0089B44B /* Assets.xcassets */,
-				7FFE5F5F2539628E0089B44B /* LaunchScreen.storyboard */,
-				7FFE5F622539628E0089B44B /* Info.plist */,
+				7F2748F8254B6280006CB849 /* ViewController */,
+				7F2748F5254B625F006CB849 /* StoryBoard */,
+				7F2748F6254B6274006CB849 /* System */,
 			);
 			path = HW2;
 			sourceTree = "<group>";
@@ -137,9 +164,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FFE5F592539628D0089B44B /* ViewController.swift in Sources */,
+				7FFE5F592539628D0089B44B /* ColorMixerViewController.swift in Sources */,
 				7FFE5F552539628D0089B44B /* AppDelegate.swift in Sources */,
 				7FFE5F572539628D0089B44B /* SceneDelegate.swift in Sources */,
+				7F2748FE254B634D006CB849 /* StartScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,12 +316,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WM9XM3NC73;
-				INFOPLIST_FILE = HW2/Info.plist;
+				INFOPLIST_FILE = HW2/System/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.HW2";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.HW6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -307,12 +335,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WM9XM3NC73;
-				INFOPLIST_FILE = HW2/Info.plist;
+				INFOPLIST_FILE = HW2/System/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.HW2";
+				PRODUCT_BUNDLE_IDENTIFIER = "Tokarev-Dmitry.HW6";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
